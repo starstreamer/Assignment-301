@@ -1,4 +1,5 @@
-data = [
+
+dataa = [
     {
         "name": "Afghanistan",
         "capital": "Kabul",
@@ -2621,29 +2622,28 @@ data = [
 
 
 
-cool = list(data.values())
-print(cool)
+for i in range(len(dataa)):
+    print("")
+
+print(len(dataa[1]["languages"]))
+
+print(len(dataa))
+print((dataa[22]["languages"]))
+
+count = 0
+newdata = []
+arraynum = (len(dataa))
+for key in range(arraynum):
+    newdata.append(dataa[key]["languages"])
+print (newdata)
 
 
+count = 0
+newdata = []
+arraynum = (len(dataa))
+for key in range(arraynum):
+    newdata.append(dataa[key]["languages"])
+    for i in range(len(newdata)):
+       newdata[i].count()
 
-
-
-#
-# def setlist():
-#     remduplicate_list = list(set(langdata))
-#     print (remduplicate_list)
-#
-# for item in data:
-#     #print (item['languages'])
-#     langdata = item['languages']
-#     for i in range(len(langdata)):
-#         langdata[i]= langdata[0]
-#         langdata[i] = langdata[i]+langdata[i]
-#     print (langdata[i], end=' ')
-# setlist()
-#     #new_langdata = set(langdata)
-#     #print(list(new_langdata))
-#     #joinedlang = '  '.join(langdata)
-#     #print (joinedlang, end=' ')
-#
-#
+print (newdata)
